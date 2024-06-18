@@ -38,3 +38,71 @@ func TestCountForTwoTeamsReturnsOneMatch(t *testing.T) {
 	}
 
 }
+
+func TestCountForThreeTeamsReturnsTwoMatches(t *testing.T) {
+	t.Parallel()
+
+	teams := 3
+	want := 2
+	got, err := solution.Count(teams)
+
+	if err != nil {
+		t.Error("want nil error, got non-nil")
+	}
+
+	if got != want {
+		t.Errorf("want %d, got %d", want, got)
+	}
+
+}
+
+func TestCountForFourTeamsReturnsThreeMatches(t *testing.T) {
+	t.Parallel()
+
+	teams := 4
+	want := 3
+	got, err := solution.Count(teams)
+
+	if err != nil {
+		t.Error("want nil error, got non-nil")
+	}
+
+	if got != want {
+		t.Errorf("want %d, got %d", want, got)
+	}
+
+}
+
+func TestCountForSevenTeamsReturnsSixMatches(t *testing.T) {
+	t.Parallel()
+
+	teams := 7
+	want := 6
+	got, err := solution.Count(teams)
+
+	if err != nil {
+		t.Error("want nil error, got non-nil")
+	}
+
+	if got != want {
+		t.Errorf("want %d, got %d", want, got)
+	}
+
+}
+
+func TestCountForFourteenTeamsReturnsThirteenMatches(t *testing.T) {
+	t.Parallel()
+
+	teams := 14
+	want := 13
+	got, err := solution.Count(teams)
+
+	if err != nil {
+		t.Error("want nil error, got non-nil")
+	}
+
+	if got != want {
+		t.Errorf("want %d, got %d", want, got)
+	}
+
+}

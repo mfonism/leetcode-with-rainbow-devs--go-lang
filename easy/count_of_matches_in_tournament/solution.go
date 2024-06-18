@@ -19,5 +19,6 @@ func doCount(teams int) int {
 		return 1
 	}
 
-	return teams
+	matchesThisRound, restingTeam := teams / 2, teams % 2
+	return matchesThisRound + doCount(matchesThisRound + restingTeam)
 }
