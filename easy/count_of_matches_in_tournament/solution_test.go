@@ -24,3 +24,17 @@ func TestCountFailsForOneTeam(t *testing.T) {
 	}	
 }
 
+func TestCountForTwoTeamsReturnsOneMatch(t *testing.T) {
+	t.Parallel()
+
+	c, err := solution.Count(2)
+
+	if err != nil {
+		t.Error("want nil error, got non-nil")
+	}
+
+	if c != 1 {
+		t.Errorf("want 1, got %d", c)
+	}
+
+}

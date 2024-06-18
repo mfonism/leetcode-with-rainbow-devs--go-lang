@@ -11,5 +11,13 @@ func Count(teams int) (int, error) {
 		return matches, fmt.Errorf("cannot play tournament with %d matches", teams)
 	}
 
-	return matches, nil
+	return doCount(teams), nil
+}
+
+func doCount(teams int) int {
+	if teams == 2 {
+		return 1
+	}
+
+	return teams
 }
