@@ -12,7 +12,7 @@ func TestCountFailsForZeroTeams(t *testing.T) {
 	_, err := solution.Count(0)
 	if err == nil {
 		t.Error("want non-nil error, got nil")
-	}	
+	}
 }
 
 func TestCountFailsForOneTeam(t *testing.T) {
@@ -21,7 +21,7 @@ func TestCountFailsForOneTeam(t *testing.T) {
 	_, err := solution.Count(1)
 	if err == nil {
 		t.Error("want non-nil error, got nil")
-	}	
+	}
 }
 
 func TestCountForTwoTeamsReturnsOneMatch(t *testing.T) {
