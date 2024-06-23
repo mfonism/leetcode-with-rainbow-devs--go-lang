@@ -45,7 +45,6 @@ func TestCountForTwoTeamsReturnsOneMatch(t *testing.T) {
 	if got != want {
 		t.Errorf("want %d, got %d", want, got)
 	}
-
 }
 
 func TestCountForThreeTeamsReturnsTwoMatches(t *testing.T) {
@@ -62,7 +61,6 @@ func TestCountForThreeTeamsReturnsTwoMatches(t *testing.T) {
 	if got != want {
 		t.Errorf("want %d, got %d", want, got)
 	}
-
 }
 
 func TestCountForFourTeamsReturnsThreeMatches(t *testing.T) {
@@ -79,7 +77,6 @@ func TestCountForFourTeamsReturnsThreeMatches(t *testing.T) {
 	if got != want {
 		t.Errorf("want %d, got %d", want, got)
 	}
-
 }
 
 func TestCountForSevenTeamsReturnsSixMatches(t *testing.T) {
@@ -96,7 +93,6 @@ func TestCountForSevenTeamsReturnsSixMatches(t *testing.T) {
 	if got != want {
 		t.Errorf("want %d, got %d", want, got)
 	}
-
 }
 
 func TestCountForFourteenTeamsReturnsThirteenMatches(t *testing.T) {
@@ -113,5 +109,4 @@ func TestCountForFourteenTeamsReturnsThirteenMatches(t *testing.T) {
 	if got != want {
 		t.Errorf("want %d, got %d", want, got)
 	}
-
 }
