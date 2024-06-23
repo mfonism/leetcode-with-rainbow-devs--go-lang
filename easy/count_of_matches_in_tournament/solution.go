@@ -8,7 +8,7 @@ func Count(teams int) (int, error) {
 	var matches int
 
 	if teams < 1 {
-		return matches, fmt.Errorf("cannot play tournament with %d matches", teams)
+		return matches, fmt.Errorf("cannot play tournament with %d teams", teams)
 	}
 
 	return doCount(teams), nil
