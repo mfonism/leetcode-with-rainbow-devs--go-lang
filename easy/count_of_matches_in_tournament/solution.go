@@ -7,7 +7,7 @@ import "fmt"
 func Count(teams int) (int, error) {
 	var matches int
 
-	if teams < 2 {
+	if teams < 1 {
 		return matches, fmt.Errorf("cannot play tournament with %d matches", teams)
 	}
 
@@ -15,7 +15,7 @@ func Count(teams int) (int, error) {
 }
 
 func doCount(teams int) int {
-	if teams == 2 {
+	if teams <= 2 {
 		return 1
 	}
 
