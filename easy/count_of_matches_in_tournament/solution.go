@@ -4,6 +4,13 @@ import "fmt"
 
 // Problem at https://leetcode.com/problems/count-of-matches-in-tournament/
 
+// Simple interface for LeetCode
+func numberOfMatches(teams int) int {
+	res, _ := Count(teams)
+
+	return res
+}
+
 func Count(teams int) (int, error) {
 	var matches int
 
